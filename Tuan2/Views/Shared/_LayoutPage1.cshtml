@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Assets/css/Style1.css" />
+  
+    @*@Styles.Render("~/Assets/css")
+    @Scripts.Render("")*@
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <div id="Wrapper">
+        <div id="Header">
+            <div id="banner">
+                <img src="/Assets/images/main.jpg" />
+            </div>
+            <div id="head2">
+                <div id="Trai">
+                    <div id="menu">
+                        <ul>
+                            <li><a href="/Home/Home">HOME PAGE</a></li>
+                            <li><a href="/Home/About">ABOUT US</a></li>
+                            <li><a href="/Home/Services">SERVICES</a></li>
+                            <li><a href="/home/support">SUPPORT</a></li>
+                            <li><a href="/home/contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <div id="welcome"><img src="/Assets/images/welcome.jpg" /></div>
+                    <div id="text">
+                        <p style="font-size:10px;">
+                            <span style="font-weight:bold;">Ea consetetur sadi lorem sed</span> <br />
+                            lorem ipsum dolor sed Consetetur pscing elitr, sed diam nonumy eirmod Dolores et ea consetetur sadi pscing elit consetetur pscing elitr, sed diam nonumy lorem ipsum dolor sed Dolores et ea consetetur sadi pscing elit consetetur pscing elitr, sed diam nonumy lorem ipsum dolor sed Consetetur pscing elitr, sed diam nonumy read more about us...
+                        </p>
+                    </div>
+                </div>
+                <div id="Phai"><img src="/Assets/images/main-12.jpg" /></div>
+            </div>
+        </div>
+        @RenderSection("SubHeader", false)
+        <div id="Content">
+            @RenderBody()<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+        @RenderSection("subfooter",false)
+        <div id="Footer">
+
+            <a href="#">HOME</a>
+            | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a>
+            | <a href="#">NEWS &amp; EVENTS</a> | <a href="#">SUPPORT</a> | <a href="#">CONTACTS</a>
+            <br>
+            Copyright © Your Company Name. Designed by <a href="http://www.cntp.edu.vn" target="_blank">YenNguyen</a><br>
+            Supported by <a href="http://www.fit.hufi.edu.vn/" target="_blank">Fit.hufi.edu.vn</a>
+
+        </div>
+    </div>
+
+</body>
+</html>
+

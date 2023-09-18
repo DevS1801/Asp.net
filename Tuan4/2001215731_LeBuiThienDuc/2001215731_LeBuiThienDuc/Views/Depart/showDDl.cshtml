@@ -1,0 +1,33 @@
+﻿@model IEnumerable<_2001215731_LeBuiThienDuc.Models.Deparment>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>showDDl</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+       
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+              @Html.ActionLink(item.Name, "showlstEml", "Depart", new {id=item.Id},null)
+</td>
+
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

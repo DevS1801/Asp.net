@@ -1,0 +1,24 @@
+﻿@model _2001215731_LeBuiThienDuc.Models.Deparment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Phòng chi tiết</h2>
+
+<table class="table">
+    <tr>
+        <th>Mã phòng:</th>
+        <td>@Html.DisplayFor(model => model.Id)</td>
+    </tr>
+    <tr>
+        <th>Tên phòng:</th>
+        <td>@Html.DisplayFor(model => model.Name)</td>
+    </tr>
+    <tr>
+        <th>Số nhân viên:</th>
+        <td>@ViewBag.getSoNV</td>
+    </tr>
+</table>
+
+@Html.ActionLink("Quay lại", "showDepar", null, new { @class = "btn btn-default" })

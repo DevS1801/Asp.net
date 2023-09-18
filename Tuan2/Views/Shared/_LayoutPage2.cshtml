@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="~/Assets/css/Style1.css" />
+
+    @*@Styles.Render("~/Assets/css")
+        @Scripts.Render("")*@
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <div id="Wrapper">
+       
+        @RenderPage("/Views/Shared/Header.cshtml");
+        <div id="Content">
+            @RenderBody()<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        </div>
+     @RenderPage("/Views/Shared/Footer.cshtml")
+        
+    </div>
+
+</body>
+</html>
+
